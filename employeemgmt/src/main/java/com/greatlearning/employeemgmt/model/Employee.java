@@ -24,21 +24,42 @@ public class Employee {
 	private String lastName;
 	@Column(name = "emp_email")
 	private String email;
-	public Object getFirstName;
-	public Object getLastName;
-	public Object getEmail;
-	public void setFirstName(Object getFirstName) {
-		// TODO Auto-generated method stub
-		
+	
+	public Employee(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
 	}
-	public void setLastName(Object getLastName) {
-		// TODO Auto-generated method stub
-		
+	
+
+	public int getId() {
+		return id;
 	}
-	public void setEmail(Object getEmail) {
-		// TODO Auto-generated method stub
-		
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 
 }
 
